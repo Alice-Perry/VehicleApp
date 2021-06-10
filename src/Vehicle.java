@@ -1,13 +1,11 @@
-
 public class Vehicle {
-   
     private Tank tank;
     private Motor motor;
 
     // constructor
-    public Vehicle(Tank tanky, Motor motory){
-        tank = tanky;
-        motor = motory;
+    public Vehicle(Tank tank, Motor motor){
+        this.tank = tank;
+        this.motor = motor;
     }
 
     // gewone functie
@@ -16,7 +14,7 @@ public class Vehicle {
     }
 
     public int calculateDistance(){
-        int distance = tank.fuelInTank * motor.efficiency;
+        int distance = tank.getFuelInTank() * motor.getEfficiency();
         return distance;
     }
 }

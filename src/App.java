@@ -1,9 +1,9 @@
 public class App {
     public static void main(String[] args) throws Exception {
         int myTankSize=50;
-        int efficiency = 8; //20 km per liter
-        int fuel=68;
-
+        int efficiency=8; //20 km per liter
+        int fuel=35;
+        
         // maak nieuwe tank met nieuwe tankSize
         Tank myTank = new Tank(myTankSize);
 
